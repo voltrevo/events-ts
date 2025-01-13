@@ -2,11 +2,10 @@
   "name": "ee-typed",
   "version": "0.1.0",
   "description": "EventEmitter with type information",
+  "type": "module",
   "main": "dist/src/index.js",
-  "devDependencies": {
-    "typescript": "^5.4.5"
-  },
   "scripts": {
+    "build": "rm -rf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,5 +28,8 @@
   "dependencies": {
     "@types/node": "^20.14.2",
     "typed-emitter": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
   }
 }
